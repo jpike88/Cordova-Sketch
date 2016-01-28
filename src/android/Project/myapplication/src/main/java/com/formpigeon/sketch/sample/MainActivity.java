@@ -1,8 +1,8 @@
-package com.formpigeon.sketch.sample;
+package com.FormPigeon.sketch.sample;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import com.formpigeon.sketch.SketchActivity;
+import com.FormPigeon.sketch.SketchActivity;
 import android.content.Intent;
 import org.json.JSONArray;
 import org.json.JSONException;

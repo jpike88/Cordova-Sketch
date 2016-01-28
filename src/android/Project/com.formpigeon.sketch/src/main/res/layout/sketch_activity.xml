@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.formpigeon.sketch.SketchActivity">
+    tools:context="com.FormPigeon.sketch.SketchActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -15,7 +15,7 @@
         android:layout_gravity="center_horizontal"
         android:background="@android:color/white">
 
-        <com.formpigeon.sketch.CanvasView
+        <com.FormPigeon.sketch.CanvasView
             android:id="@+id/canvas"
             android:layout_width="1024px"
             android:layout_height="768px"

@@ -1,4 +1,4 @@
-package com.formpigeon.sketch.sample;
+package com.FormPigeon.sketch.sample;
 
 import org.junit.Test;
 

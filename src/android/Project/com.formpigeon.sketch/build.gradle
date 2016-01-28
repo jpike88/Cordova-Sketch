@@ -29,11 +29,11 @@ dependencies {
 
 gradle.buildFinished {
     copy {
-        from System.getProperty("user.dir") + "/com.formpigeon.sketch/src/main/AndroidManifest.xml"
-        into System.getProperty("user.dir") + "/com.formpigeon.sketch/"
+        from System.getProperty("user.dir") + "/com.FormPigeon.sketch/src/main/AndroidManifest.xml"
+        into System.getProperty("user.dir") + "/com.FormPigeon.sketch/"
     }
     copy {
-        from System.getProperty("user.dir") + "/com.formpigeon.sketch/src/main/res/"
-        into System.getProperty("user.dir") + "/com.formpigeon.sketch/res/"
+        from System.getProperty("user.dir") + "/com.FormPigeon.sketch/src/main/res/"
+        into System.getProperty("user.dir") + "/com.FormPigeon.sketch/res/"
     }
 }

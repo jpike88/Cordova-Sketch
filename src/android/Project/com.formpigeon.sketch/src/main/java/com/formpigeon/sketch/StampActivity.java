@@ -1,4 +1,4 @@
-package com.formpigeon.sketch;
+package com.FormPigeon.sketch;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

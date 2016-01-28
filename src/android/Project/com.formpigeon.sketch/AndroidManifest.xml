@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.formpigeon.sketch">
-
-    <application
-        android:allowBackup="true"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
-        >
+    package="com.FormPigeon.sketch">
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19" />
+    <application>
         <activity
             android:name=".SketchActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:screenOrientation="landscape"
             >
             <intent-filter>
@@ -18,8 +15,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".StampActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:screenOrientation="landscape">
-            </activity>
+        </activity>
     </application>
 
 </manifest>

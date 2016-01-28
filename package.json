@@ -1,0 +1,19 @@
+{
+  "name": "formpigeon-cordova-sketch",
+  "version": "1.0.0",
+  "description": "Sketch Plugin for Cordova",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jpike88/Cordova-Sketch.git"
+  },
+  "keywords": [
+    "sketch",
+    "cordova"
+  ],
+  "author": "Josh Pike",
+  "license": "MIT"
+}

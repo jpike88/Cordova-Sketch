@@ -9,7 +9,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/com.formpigeon.sketch" />
+            <option value="$PROJECT_DIR$/com.FormPigeon.sketch" />
             <option value="$PROJECT_DIR$/myapplication" />
           </set>
         </option>

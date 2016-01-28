@@ -1,4 +1,4 @@
-package com.formpigeon.sketch;
+package com.FormPigeon.sketch;
 import android.widget.BaseAdapter;
 import android.content.Context;
 import android.view.View;
@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.util.Base64;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import com.formpigeon.sketch.ImageCaption;
+import com.FormPigeon.sketch.ImageCaption;
 import java.util.ArrayList;
 import android.widget.TextView;
 

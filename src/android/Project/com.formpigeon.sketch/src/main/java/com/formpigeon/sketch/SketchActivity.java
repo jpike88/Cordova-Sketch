@@ -1,4 +1,4 @@
-package com.formpigeon.sketch;
+package com.FormPigeon.sketch;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -52,7 +52,7 @@ public class SketchActivity extends AppCompatActivity {
         text.setOnClickListener(clickListener);
         stamp.setOnClickListener(clickListener);
 
-        System.out.println(getIntent().getStringExtra("json"));
+        //System.out.println(getIntent().getStringExtra("json"));
         shapeMenu.setOnMenuButtonClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
