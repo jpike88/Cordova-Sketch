@@ -1,4 +1,4 @@
-package com.FormPigeon.sketch;
+package com.formpigeon.sketch;
 import android.widget.BaseAdapter;
 import android.content.Context;
 import android.view.View;
@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.util.Base64;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import com.FormPigeon.sketch.ImageCaption;
+import com.formpigeon.sketch.ImageCaption;
 import java.util.ArrayList;
 import android.widget.TextView;
 
@@ -78,7 +78,7 @@ public class ImageAdapter extends BaseAdapter {
             imageView = (ImageCaption) convertView;
         }
 
-
+        System.out.println("wattt");
 
         return imageView;
     }

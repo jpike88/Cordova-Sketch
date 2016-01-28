@@ -1,4 +1,4 @@
-package com.FormPigeon.sketch;
+package com.formpigeon.sketch;
 
 import android.content.Context;
 import android.graphics.Canvas;

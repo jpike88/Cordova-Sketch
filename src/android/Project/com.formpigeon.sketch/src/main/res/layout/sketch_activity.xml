@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:fab="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.FormPigeon.sketch.SketchActivity">
+    tools:context="com.formpigeon.sketch.SketchActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -15,7 +15,7 @@
         android:layout_gravity="center_horizontal"
         android:background="@android:color/white">
 
-        <com.FormPigeon.sketch.CanvasView
+        <com.formpigeon.sketch.CanvasView
             android:id="@+id/canvas"
             android:layout_width="1024px"
             android:layout_height="768px"
@@ -43,7 +43,6 @@
         android:layout_gravity="bottom|right"
         android:layout_marginBottom="10dp"
         android:layout_marginRight="220dp"
-
         android:src="@drawable/ic_undo_white_24dp"
         fab:menu_labels_ellipsize="end"
         fab:menu_labels_singleLine="true"
@@ -143,4 +142,4 @@
 
     </com.github.clans.fab.FloatingActionMenu>
 
-</android.support.design.widget.CoordinatorLayout>
+</FrameLayout>

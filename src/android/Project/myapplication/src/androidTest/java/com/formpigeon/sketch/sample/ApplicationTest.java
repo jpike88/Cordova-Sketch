@@ -1,4 +1,4 @@
-package com.FormPigeon.sketch.sample;
+package com.formpigeon.sketch.sample;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

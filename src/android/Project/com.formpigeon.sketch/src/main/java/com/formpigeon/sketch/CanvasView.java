@@ -5,7 +5,7 @@
  * Released under the MIT license
  */
 
-package com.FormPigeon.sketch;
+package com.formpigeon.sketch;
 
 import java.io.ByteArrayOutputStream;
 import java.util.List;

@@ -1,1 +1,1 @@
-include ':myapplication', ':com.FormPigeon.sketch'
+include ':myapplication', ':com.formpigeon.sketch'

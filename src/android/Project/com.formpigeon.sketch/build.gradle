@@ -21,19 +21,17 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.1.1'
-    compile 'com.android.support:design:23.1.1'
     compile 'com.github.clans:fab:1.6.2'
 
 }
 
 gradle.buildFinished {
     copy {
-        from System.getProperty("user.dir") + "/com.FormPigeon.sketch/src/main/AndroidManifest.xml"
-        into System.getProperty("user.dir") + "/com.FormPigeon.sketch/"
+        from System.getProperty("user.dir") + "/com.formpigeon.sketch/src/main/AndroidManifest.xml"
+        into System.getProperty("user.dir") + "/com.formpigeon.sketch/"
     }
     copy {
-        from System.getProperty("user.dir") + "/com.FormPigeon.sketch/src/main/res/"
-        into System.getProperty("user.dir") + "/com.FormPigeon.sketch/res/"
+        from System.getProperty("user.dir") + "/com.formpigeon.sketch/src/main/res/"
+        into System.getProperty("user.dir") + "/com.formpigeon.sketch/res/"
     }
 }

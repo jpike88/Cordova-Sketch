@@ -1,15 +1,17 @@
-package com.FormPigeon.sketch;
+package com.formpigeon.sketch;
 
 import android.content.Intent;
 import android.os.Bundle;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.os.Handler;
 import android.widget.Toast;
-import android.support.v7.widget.Toolbar;
+import com.formpigeon.sketch.CanvasView;
+import com.formpigeon.sketch.StampActivity;
+
 import com.github.clans.fab.FloatingActionButton;
 import com.github.clans.fab.FloatingActionMenu;
 
@@ -17,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class SketchActivity extends AppCompatActivity {
+public class SketchActivity extends Activity {
 
     private FloatingActionButton fab1;
     private FloatingActionButton fab2;
@@ -123,33 +125,33 @@ public class SketchActivity extends AppCompatActivity {
 
             int id =  v.getId();
 
-                if(id == R.id.undo) {
-                    canvas.undo();
-                } else if(id == R.id.redo) {
-                    canvas.redo();
-                } else if(id == R.id.clear) {
-                    canvas.clear();
-                } else if(id == R.id.text) {
-                    canvas.setText("test");
-                    canvas.setMode(CanvasView.Mode.TEXT);
-                } else if(id == R.id.stamp) {
-                    startActivityForResult(stampActivity, 0);
-                } else if(id == R.id.line) {
-                    canvas.setText("");
-                    canvas.setMode(CanvasView.Mode.DRAW);
-                    canvas.setDrawer(CanvasView.Drawer.LINE);
-                    shapeMenu.close(true);
-                } else if(id == R.id.circle) {
-                    canvas.setText("");
-                    canvas.setMode(CanvasView.Mode.DRAW);
-                    canvas.setDrawer(CanvasView.Drawer.ELLIPSE);
-                    shapeMenu.close(true);
-                } else if(id == R.id.rectangle) {
-                    canvas.setText("");
-                    canvas.setMode(CanvasView.Mode.DRAW);
-                    canvas.setDrawer(CanvasView.Drawer.RECTANGLE);
-                    shapeMenu.close(true);
-                }
+            if(id == R.id.undo) {
+                canvas.undo();
+            } else if(id == R.id.redo) {
+                canvas.redo();
+            } else if(id == R.id.clear) {
+                canvas.clear();
+            } else if(id == R.id.text) {
+                canvas.setText("test");
+                canvas.setMode(CanvasView.Mode.TEXT);
+            } else if(id == R.id.stamp) {
+                startActivityForResult(stampActivity, 0);
+            } else if(id == R.id.line) {
+                canvas.setText("");
+                canvas.setMode(CanvasView.Mode.DRAW);
+                canvas.setDrawer(CanvasView.Drawer.LINE);
+                shapeMenu.close(true);
+            } else if(id == R.id.circle) {
+                canvas.setText("");
+                canvas.setMode(CanvasView.Mode.DRAW);
+                canvas.setDrawer(CanvasView.Drawer.ELLIPSE);
+                shapeMenu.close(true);
+            } else if(id == R.id.rectangle) {
+                canvas.setText("");
+                canvas.setMode(CanvasView.Mode.DRAW);
+                canvas.setDrawer(CanvasView.Drawer.RECTANGLE);
+                shapeMenu.close(true);
+            }
 
 
 

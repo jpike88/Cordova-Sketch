@@ -1,4 +1,4 @@
-package com.FormPigeon.sketch;
+package com.formpigeon.sketch;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -8,7 +8,9 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
+import com.formpigeon.sketch.StampActivity;
+import android.app.Activity;
+import com.formpigeon.sketch.ImageAdapter;
 import android.view.ContextThemeWrapper;
 import android.view.MenuItem;
 import android.view.View;
@@ -26,13 +28,15 @@ import android.widget.GridView;
 /**
  * Created by joshua on 26/01/2016.
  */
-public class StampActivity extends AppCompatActivity {
+public class StampActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.stamp_activity);
         //String jsonToConvert = getString(R.string.sampleJSONList);
+        Bundle extras = getIntent().getExtras();
+        //System.out.println(extras.getE)
 
         final GridView gridview = (GridView) findViewById(R.id.gridview);
         gridview.setAdapter(new ImageAdapter(this));
