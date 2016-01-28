@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.formpigeon.sketch"
+        version="0.7.0">
+
+  <name>FPSketch</name>
+
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+<asset src="www/FPSketch.js" target="js/FPSketch.js"/>
+
+<js-module src="www/FPSketch.js" name="FPSketch">
+     <clobbers target="com.formpigeon.sketch.FPSketch" />
+</js-module>
+
+
+  <platform name="android">
+
+      <resource-file src="src/android/Project/com.formpigeon.sketch/src/main/res/mipmap-xxxhdpi/ic_launcher.png" target="res/mipmap/ic_launcher.png" />
+      
+<framework src="src/android/Project/com.formpigeon.sketch" custom="true" type="projectReference" />
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="FPSketch">
+        <param name="android-package" value="com.formpigeon.sketch.FPSketch"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/FPSketch.java" target-dir="src/com/formpigeon/sketch/"/>
+
+
+  </platform>
+
+  <platform name="ios">
+    
+    <config-file target="config.xml" parent="/widget">
+      <feature name="FPSketch">
+        <param name="ios-package" value="FPSketch" />
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/FPSketch.h" target-dir="FPSketchPlugin"/>
+    <source-file src="src/ios/FPSketch.m" target-dir="FPSketchPlugin"/>
+
+    <header-file src="src/ios/CollectionViewController.h" target-dir="FPSketchPlugin"/>
+    <source-file src="src/ios/CollectionViewController.m" target-dir="FPSketchPlugin"/>
+    <resource-file src="src/ios/CollectionViewController.xib" />
+
+    <header-file src="src/ios/ECS189DrawingViewController.h" target-dir="FPSketchPlugin"/>
+    <source-file src="src/ios/ECS189DrawingViewController.m" target-dir="FPSketchPlugin"/>
+    <resource-file src="src/ios/ECS189DrawingView.xib" />
+
+    <header-file src="src/ios/FPSketchScrollView.h" target-dir="FPSketchPlugin"/>
+    <source-file src="src/ios/FPSketchScrollView.m" target-dir="FPSketchPlugin"/>
+
+    <header-file src="src/ios/myShape.h" target-dir="FPSketchPlugin"/>
+    <source-file src="src/ios/myShape.m" target-dir="FPSketchPlugin"/>
+
+    <header-file src="src/ios/myUIPickerViewController.h" target-dir="FPSketchPlugin"/>
+    <source-file src="src/ios/myUIPickerViewController.m" target-dir="FPSketchPlugin"/>
+
+    <header-file src="src/ios/SketchCompass.h" target-dir="FPSketchPlugin"/>
+    <source-file src="src/ios/SketchCompass.m" target-dir="FPSketchPlugin"/>
+
+    <header-file src="src/ios/StampImage.h" target-dir="FPSketchPlugin"/>
+    <source-file src="src/ios/StampImage.m" target-dir="FPSketchPlugin"/>
+
+    <resource-file src="src/ios/StampCell.xib" />
+
+  </platform>
+
+  <platform name="wp7">
+    <source-file src="src/wp7/FPSketch.cs"/>
+  </platform>
+
+</plugin>
